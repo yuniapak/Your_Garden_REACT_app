@@ -14,7 +14,7 @@ const PlantInfo = (props) => {
   return (
     <div className="infoPage">
       <h3>{initialState.name}</h3>
-      <img src={location.state.plant.image} />
+      <img src={location.state.plant.image} alt={initialState.name} />
       <h4>Reach maturity in {initialState.grow}</h4>
       <h4>Water: {initialState.water}</h4>
       <h4>Companion planting best with {initialState.fit}</h4>

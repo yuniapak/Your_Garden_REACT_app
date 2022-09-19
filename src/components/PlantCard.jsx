@@ -1,6 +1,4 @@
 import React from 'react'
-import{Link} from 'react-router-dom'
-import {useState} from 'react'
 import axios from 'axios'
 import {useNavigate} from 'react-router-dom'
 
@@ -20,6 +18,7 @@ const addToCart = async (e) => {
     const plantId = await getPlant(e.target.id) 
     const res = await axios.put(`http://localhost:3001/api/yourNewGarden/${cartId}`,{plant: plantId})
     console.log(plantId)
+    console.log(res.data)
 // '    window.location.reload(false)'
 }
 
@@ -28,8 +27,7 @@ const showPlant = (plant) => {
 navigate(`${plant.Name}`,{state: {plant: plant}})
 }
 //Maping through all elements before searched
-    {
-        if (props.searchQuery == '' || props.searched != true) {
+        if (props.searchQuery === '' || props.searched !== true) {
           return (
             <div className='allPlants'>
               {props.allPlants.map((plant) => (
@@ -45,7 +43,7 @@ navigate(`${plant.Name}`,{state: {plant: plant}})
             </div>
           )
         }
-      }
+
 
 
 //Mapping through Search elements
