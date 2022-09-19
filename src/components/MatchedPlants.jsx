@@ -8,7 +8,7 @@ return(
             {arrayOfPlants.map((plant) => (
             <div key={plant.Name} className="matchedPlant" alt={plant.name}>
             <h1>{plant.Name}</h1>
-            <img src = {plant.image}/>
+            <img src={plant.image} alt={plant.Name}/>
          
             </div>
                 ))}
