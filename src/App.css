@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+body {
+  height : 100%;
+  max-width: 100%;
+  text-align: center;
+  background-color: rgb(82, 105, 97);
+  color: rgb(224, 230, 223);
+  font-family: 'Noto Serif', serif
+}
+.logo{
+  width: 100px;
+  height:100px;
+  position: absolute;
+  left:59%;
+}
+button{
+    font-family: 'Noto Serif', serif;
+}
+input{
+  font-family: 'Noto Serif', serif;
+  width: 300px;
+}
+h1{
+  color: rgb(171, 176, 119);
+  font-size: 45px;
+}
+img{
+  width:300px;
+  height:200px;
+  padding:10px;
+  border-radius: 130px;
+}
+header{
+  background-color: rgb(51, 74, 66);
+  padding:10px;
+}
+.Home h2{
+font-size: 35px;
+}
+.Home p{
+  background-color: rgba(51, 74, 66, 0.5);
+  display: table;
+  margin:auto;
+  padding:10px;
+  width: 450px
+}
+.plant{
+  background: rgb(51, 74, 66);
+  margin: 20px;
+  padding:10px;
+}
+.allPlants{
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: auto auto auto;
+}
+.allPlants button{
+  background:  rgb(219, 230, 217);
+  border-radius: 130px;
+  border: solid ;
+}
+.allPlants button:hover{
+  border: solid 
+}
+.addMorebutton button{
+  margin: 0 10px;
+  border-radius: 130px;
+}
+.addMorebutton button:hover{
+  border: solid  rgb(171, 176, 119);
+}
+a{
+  color: rgb(224, 230, 223);
+  text-decoration: none;
+  padding:30px;
+  margin:20px;
+  }
+  a:hover{
+    background-color: rgb(171, 176, 119);
+    color: rgb(51, 74, 66);
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+input{
+  padding: 10px;
+  margin: 20px;
+}
+.searchButton{
+  border-radius: 130px;
+}
+.delete{
+  position:relative;
+  background-color: rgb(82, 105, 97) ;
+  color:rgb(224, 230, 223);
+  left:45%;
+  top: 0px;
+  padding:10px 15px;
+  border: none;
+  border-radius: 30px;
+}
+.Cart{
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: auto auto auto;
+}
+.cartButtons{
+  position:relative;
+  left: 400px;
+}
+.cartButtons button{
+  margin: 0 20px;
+  width: 150px;
+  border-radius: 230px;
+}
+.cartElem{
+  max-width: 400px;
+  max-height: 400px;
+  background: rgb(51, 74, 66);
+  margin: 20px;
+  padding:10px;
+}
+.cartElem h3{
+  position:relative;
+  top: -35px; 
+  font-size: 30px;
+}
+.cartElem h4{
+  position:relative;
+  top: -55px; 
+  max-width: 400px;
+}
+.cartElem img{
+  position:relative;
+  top: -40px; 
+}
+button{
+  padding: 10px;
+  background-color: rgb(224, 230, 223);
+  border: solid  rgb(224, 230, 223);
+  color:rgb(51, 74, 66);
+}
+button:hover{
+  background-color:  rgb(171, 176, 119);
+  border:none;
+  color:rgb(224, 230, 223);
+}
+.infoPage h3{
+font-size: 35px;
+margin: 10px 0;
+}
+.infoPage h4{
+  font-size: 16px;
+  display: table;
+  padding:5px;
+  margin:auto;
+  width:450px;
+  align-self: left;
+}
+.infoPage p{
+  font-size: 15px;
+  display: table;
+  margin:auto;
+  width:450px;
+
+}
+.about{
+  background-color: rgba(51, 74, 66, 0.5);
+  padding: 15px;
+}
+/* .companion-plants{
+  position: absolute;
+  left:50%;
+  top:170vh;
+} */
+.matched{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.matched img{
+  width:150px;
+  height: 80px;
+  padding:10px;
+  border-radius: 0px;
+}
+.matchedPlant h1{
+  font-size: 20px;
+}
+.matchedPlant{
+  width: 400px;
+  background-color: bisque;
+  margin:20px;
+}
+@media only screen and (max-width: 390px) {
+  body {
+  max-width: 390px;
+  font-size: 10px;
+  text-align: center;
+  }
+  .logo{
+    width: 100px;
+    height:100px;
+    margin:0;
+    padding: 0;
+    position: relative;
+    left:0;
+  }
+  h1{
+    font-size: 35px;
+    padding:0;
+    margin:0;
+  }
+  a{
+    color: rgb(224, 230, 223);
+    text-decoration: none;
+    font-size:15px;
+    display: block;
+    padding:5px;
+    margin:0px;
+
+    }
+  .Nav{
+    width:370px;
+  }
+  .Home h2{
+    font-size: 30px;
+    }
+    .Home p{
+      font-size: 15px;
+      background-color: rgba(51, 74, 66, 0.5);
+      display: table;
+      margin:auto;
+      padding:10px;
+      width: 390px;
+    }
+  input{
+    width:160px;
+  }
+  .allPlants{
+    display:block;
+   font-size: 10px;
+  }
+  .Cart{
+    max-width: 390px;
+    display: block;
+    align-items: center;
+    padding: 0;
+    margin:0;
+  }
+  .cartButtons{
+    position: relative;
+    left:0;
+    padding: 10px;
+  }
+  .cartButtons button{
+    margin: 5px ;
+    width: 150px;
+    border-radius: 230px;
+  }
+  .Cart h4{
+    font-size: 8px;
+  }
+h2{
+    font-size: 20px;
+    padding:5px;
+    margin:5px;
+  }
+  img{
+    width:150px;
+    height:100px;
+    padding:0px;
+    margin:0;
+    border-radius: 130px;
+  }
+  .cartElem{
+    background: rgb(51, 74, 66);
+    margin: 20px;
+    padding:5px;
+    
+  }
+  .cartElem h4{
+    position:relative;
+    display: block;
+    font-size: 15px;
+  }
+  .infoPage h3{
+    font-size: 25px;
+    margin: 10px 0;
+    }
+    .infoPage h4{
+      font-size: 16px;
+      display: table;
+      padding:5px;
+      margin:auto;
+      width:200px;
+      align-self: left;
+    }
+    .infoPage p{
+      font-size: 15px;
+      display: table;
+      margin:auto;
+      width:290px;
+    
+    }
+
+    .matched{
+      max-width: 390px;
+      position: relative;
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 0%;
+    }
+    .matchedPlant{
+      border-radius: 30px;
+      max-width: 180px;
+      background-color: rgba(180, 201, 174,0.5);
+      margin: 10px 5px;
+    }
+}
